@@ -7,4 +7,4 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:21-jdk
 COPY --from=build /target/Email-Writer-0.0.1-SNAPSHOT.jar Email-Writer.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/Hello-World.jar"]
+ENTRYPOINT ["java", "-jar", "/Email-Writer.jar"]
