@@ -15,7 +15,8 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:5173",    // React dev server
-                                "https://mail.google.com"   // Gmail page (when using extension)
+                                "https://mail.google.com",
+                                "https://smart-reply-chi.vercel.app"// Gmail page (when using extension)
                         )
                         .allowedMethods("*")
                         .allowedHeaders("*");
